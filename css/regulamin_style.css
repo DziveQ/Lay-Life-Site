@@ -1,0 +1,37 @@
+body {
+    background-color: #2c2f33;
+}
+
+.motd {
+    margin-top: 0%;
+    font-size: 2em;
+}
+
+article {
+    color: white;
+    font-size: 0.75em;
+    text-align: left;
+}
+
+h3, h2 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-left: 10%;
+    color: turquoise;
+}
+
+h4 {
+    margin-left: 10%;
+    font-size: 1.45em;
+}
+
+span {
+    background: -webkit-linear-gradient(turquoise, rgb(25, 168, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

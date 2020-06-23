@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LayLife - Polski Serwer Roleplay</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-site-verification" content="E7TjVglteGitfVzD6LFXyEr2GdeIsLF8gUf1C9Sn_pQ" />
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+
+    <body style="background-image: url('css/bg1.png');">
+        <header>
+            <img src="css/logo.png" height="64px">
+            
+            <div class="navbar">
+                <div class="div-nav">
+                    <a href="index.html" class="navbar-selection" style="color: turquoise;">stona główna</a>
+                </div>
+
+                <div class="div-nav" id='to'>
+                    <a href="https://discord.gg/E3k3Bj9" class="navbar-selection">discord</a>
+                </div>
+
+                <div class="div-nav" id='three'>
+                    <a href="regulamin.html" class="navbar-selection">regulamin</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="motd">
+                <span><h1 id="motd-anim"></h1></span>
+            </section>
+        </main>
+
+        <script>
+            let number = Math.floor(Math.random() * 5) + 1  
+            let element = document.getElementById("motd-anim");
+
+            if (number == 1) {
+                element.innerHTML = "serwer którego szukasz";
+            } else if (number == 2) {
+                element.innerHTML = "lepszego nie znajdziesz";
+            } else if (number == 3) {
+                element.innerHTML = "bo rp łączy a nie dzieli";
+            } else if (number == 4) {
+                element.innerHTML = "żyj jak tylko chcesz";
+            } else if (number == 5) {
+                element.innerHTML = "potrzebujemy twojej postaci!";
+            }
+        </script>
+    </body>
+</html>

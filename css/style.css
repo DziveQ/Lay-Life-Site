@@ -1,0 +1,124 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+
+body {
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+header {
+    padding-left: 2%;
+    font-size: 14.3px;
+    max-height: 20%;
+}
+
+.navbar {
+    padding-left: 60%;
+    margin-top: -5%;
+}
+
+.navbar-selection {
+    padding-left: 3%;
+    display: inline;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-repeat: no-repeat;
+    }
+
+    .navbar {
+        padding-left: 0%;
+    }
+}
+
+.div-nav {
+    text-transform: uppercase;
+    position: relative;
+    display: inline !important;
+    text-align: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.div-nav a {
+    line-height:125px;
+}
+
+.navbar-selection,
+.navbar-selection:hover,
+.navbar-selection:focus,
+.navbar-selection:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-selection::after {
+  content: "";
+  position: absolute;
+}
+
+.div-nav .navbar-selection::after {
+    top: 65%;
+    height: 4px;
+    width: 0%;
+    left: 10%;
+    margin-top: 5%;
+    transition: 0.3s ease all .1s;
+
+    background: -webkit-linear-gradient(turquoise, rgb(25, 168, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#to .navbar-selection::after {
+    left: 15%;
+}
+
+#three .navbar-selection::after {
+    left: 15%;
+}
+  
+.div-nav:hover .navbar-selection::after {
+    width: 90%;
+    height: 30%;
+    transition: 0.1s ease all;
+}
+
+.motd {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+#motd-anim {
+    -webkit-animation: moving 5s infinite;
+    animation: moving 5s infinite;
+
+    background: -webkit-linear-gradient(turquoise, rgb(25, 168, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.selected {
+    background: -webkit-linear-gradient(turquoise, rgb(25, 168, 211));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes moving {
+    0% {-webkit-transform: translateY(0px);}
+    50% {-webkit-transform: translateY(50px);}
+    100% {-webkit-transform: translateY(0px);}
+}
+
+@keyframes moving {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(50px);}
+    100% {transform: translateY(0px);}
+}
+
+a, a:link, a:visited, a:active{
+    color: white;
+    text-decoration: none;
+}
